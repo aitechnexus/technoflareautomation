@@ -1,0 +1,27 @@
+{
+  "name": "ghl-saas-automation",
+  "version": "1.0.0",
+  "description": "External App to Productize GHL Snapshots into SaaS Plans",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:sandbox": "wrangler pages dev dist --ip 0.0.0.0 --port 3000",
+    "build": "vite build",
+    "preview": "wrangler pages dev dist",
+    "deploy": "npm run build && wrangler pages deploy dist",
+    "deploy:prod": "npm run build && wrangler pages deploy dist --project-name ghl-saas-automation",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "clean-port": "fuser -k 3000/tcp 2>/dev/null || true",
+    "test": "curl http://localhost:3000"
+  },
+  "dependencies": {
+    "hono": "^4.6.14"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20250705.0",
+    "@hono/vite-cloudflare-pages": "^0.4.2",
+    "vite": "^5.4.11",
+    "wrangler": "^3.87.0",
+    "typescript": "^5.7.2"
+  }
+}
