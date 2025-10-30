@@ -11,9 +11,11 @@
   - Full audit trail and role-based access
 
 ## URLs
-- **Production**: https://interface-technoflare.pages.dev
-- **Alternative**: https://int.technoflare.tech
-- **GitHub**: (To be created)
+- **Production (Latest)**: https://ghl-saas-automation.pages.dev
+- **Deployment**: https://21f59a50.ghl-saas-automation.pages.dev
+- **Previous Deployment**: https://interface-technoflare.pages.dev
+- **Alternative Domain**: https://int.technoflare.tech
+- **GitHub**: https://github.com/aitechnexus/technoflareautomation
 
 ## Current Status
 
